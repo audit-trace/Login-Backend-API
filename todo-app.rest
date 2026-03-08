@@ -1,0 +1,49 @@
+### GET /
+
+GET http://localhost:5003
+
+###
+POST http://localhost:5003/auth/register
+Content-Type: application/json
+
+{
+    "username": "Stamina@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+    "username": "Stamina@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyOTI2MjYxLCJleHAiOjE3NzMwMTI2NjF9.1vmxsjfrLuVDXDbELDfv9Y3fjrQzdAysB5Q4OYflzhc
+
+###
+POST http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyOTI2MjYxLCJleHAiOjE3NzMwMTI2NjF9.1vmxsjfrLuVDXDbELDfv9Y3fjrQzdAysB5Q4OYflzhc
+Content-Type: application/json
+
+{
+    "task": "Finish coding the projects"
+}
+
+###
+PUT http://localhost:5003/todos/3?page=4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyOTI2MjYxLCJleHAiOjE3NzMwMTI2NjF9.1vmxsjfrLuVDXDbELDfv9Y3fjrQzdAysB5Q4OYflzhc
+Content-Type: application/json
+
+{
+    "completed": 5 
+}
+
+###
+
+DELETE http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyOTI2MjYxLCJleHAiOjE3NzMwMTI2NjF9.1vmxsjfrLuVDXDbELDfv9Y3fjrQzdAysB5Q4OYflzhc
