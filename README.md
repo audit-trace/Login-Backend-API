@@ -1,4 +1,4 @@
-# LoginBackend-development
+# Login-Backend-API
 
 A simple backend Todo API built with **Node.js**, **Express.js**, **SQLite**, **JWT authentication**, and **bcrypt password hashing**.
 
@@ -30,3 +30,4 @@ This project was built for learning backend development by practicing authentica
 
 ## Notes
 Environment variables such as `JWT_SECRET` are stored in `.env` and are not pushed to GitHub.
+
